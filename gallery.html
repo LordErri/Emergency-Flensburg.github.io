@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Flensburg - Galerie</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Emergency Flensburg - Gallery</header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="gameinfo.html">About the game</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="report.html">Report</a>
+    </nav>
+    <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="Pic1.png" alt="Polizei in Emergency Flensburg" onclick="openModal(this)">
+            <img src="Pic2.png" alt="Feuerwehr im Einsatz" onclick="openModal(this)">
+            <img src="Pic3.png" alt="Rettungswagen in Aktion" onclick="openModal(this)">
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Emergency Flensburg | Alle Rechte vorbehalten
+    </footer>
+
+    <!-- Modal für das vergrößerte Bild -->
+    <div id="modal" onclick="closeModal()">
+        <span id="closeModal" onclick="closeModal()">X</span>
+        <img id="modalImage" src="" alt="Vergrößertes Bild">
+    </div>
+
+    <script>
+        // Funktion um das Modal zu öffnen und das Bild zu vergrößern
+        function openModal(image) {
+            var modal = document.getElementById("modal");
+            var modalImage = document.getElementById("modalImage");
+            modal.style.display = "flex";
+            modalImage.src = image.src;
+        }
+
+        // Funktion um das Modal zu schließen
+        function closeModal() {
+            var modal = document.getElementById("modal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
