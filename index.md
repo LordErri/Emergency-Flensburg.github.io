@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -12,8 +11,5 @@
     <nav>
         <a href="home.html">Home</a>
     </nav>
-    <footer>
-        &copy; 2024 Emergency Flensburg | Alle Rechte vorbehalten
-    </footer>
 </body>
 </html>
