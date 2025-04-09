@@ -121,3 +121,73 @@ footer {
     font-size: 14px;
     margin-top: 40px;
 }
+/* Galerie-Stil */
+.gallery {
+    display: flex;
+    gap: 20px; /* Abstand zwischen den Bildern */
+    flex-wrap: wrap; /* Wenn der Platz nicht reicht, kommen die Bilder in eine neue Zeile */
+    justify-content: center; /* Zentriert die Bilder */
+}
+
+/* Vorschau-Stil für die Bilder */
+.gallery-image {
+    width: 150px;  /* Kleine Vorschaugröße */
+    height: auto;
+    border-radius: 10px;  /* Abgerundete Ecken */
+    object-fit: cover;  /* Verhindert Verzerrungen bei Bildern */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Weiche Übergänge für Vergrößerung und Schatten */
+    cursor: pointer;  /* Zeigt an, dass das Bild klickbar ist */
+}
+
+/* Hover-Effekt */
+.gallery-image:hover {
+    transform: scale(1.1);  /* Bild um 10% vergrößern */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Füge Schatten hinzu, um das Bild hervorzuheben */
+}
+
+/* Modal-Stil */
+.modal {
+    display: none;  /* Modal ist standardmäßig unsichtbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+/* Modal-Bild */
+#modalImage {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Close-Button für das Modal */
+#closeModal {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Stil für das Modal, wenn es sichtbar ist */
+.modal.show {
+    display: flex;  /* Modal wird sichtbar */
+    opacity: 1;
+}
+
+/* Fade-Effekt für das Modal */
+.modal.hide {
+    opacity: 0;
+    display: none;
+}
+
