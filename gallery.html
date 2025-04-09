@@ -20,10 +20,17 @@
     <div class="container">
         <h2>Gallery</h2>
         <div class="gallery">
-            <img src="Pic1.png" alt="Polizei in Emergency Flensburg" onclick="openModal(this)">
-            <img src="Pic2.png" alt="Feuerwehr im Einsatz" onclick="openModal(this)">
-            <img src="Pic3.png" alt="Rettungswagen in Aktion" onclick="openModal(this)">
+            <img src="Pic1.png" alt="Polizei in Emergency Flensburg" class="gallery-image" onclick="openModal(this)">
+            <img src="Pic2.png" alt="Feuerwehr im Einsatz" class="gallery-image" onclick="openModal(this)">
+            <img src="Pic3.png" alt="Rettungswagen in Aktion" class="gallery-image" onclick="openModal(this)">
         </div>
+        
+        <!-- Modal für das vergrößerte Bild -->
+        <div id="modal" class="modal" onclick="closeModal()">
+            <span id="closeModal" class="close" onclick="closeModal()">X</span>
+            <img id="modalImage" src="" alt="Vergrößertes Bild">
+        </div>
+              
     </div>
     <footer>
         &copy; 2024 Emergency Flensburg | Alle Rechte vorbehalten
