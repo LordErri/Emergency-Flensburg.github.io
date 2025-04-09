@@ -11,16 +11,7 @@
     <header>Emergency Flensburg - Roblox</header>
     <nav>
         <a href="home.html">Home</a>
-        <a href="gameinfo.html">Über das Spiel</a>
-        <a href="gallery.html">Galerie</a>
-        <a href="contact.html">Kontakt</a>
     </nav>
-    <div class="container">
-        <h2>Willkommen bei Emergency Flensburg!</h2>
-        <p>Ein realistisches Rettungs- und Polizeispiel in Roblox, inspiriert von der Stadt Flensburg.</p>
-        <a href="https://www.roblox.com/de/games/118977284073119/Emergency-Flensburg" class="button" target="_blank" rel="noopener noreferrer">Jetzt Spielen</a>
-        <a href="https://discord.gg/NPJTSMZuz6" class="button" target="_blank" rel="noopener noreferrer">Discord Beitreten</a>
-    </div>
     <footer>
         &copy; 2024 Emergency Flensburg | Alle Rechte vorbehalten
     </footer>
